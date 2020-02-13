@@ -24,7 +24,21 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.28" />
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startTextGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.22" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endTextGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.78" />
 
         <ImageView
             android:id="@+id/imageDetail"
@@ -41,61 +55,65 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintVertical_weight="1"
-            app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            android:gravity="center_vertical"
+            app:layout_constraintVertical_weight="1.5"
+            app:layout_constraintStart_toStartOf="@id/startTextGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endTextGuideline"
             app:layout_constraintTop_toBottomOf="@id/horizontalGuideline"
             app:layout_constraintBottom_toTopOf="@id/genderDetail"
             app:autoSizeMaxTextSize="22sp"
             app:autoSizeMinTextSize="10sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform"
-            android:lines="1"/>
+            android:lines="1" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/genderDetail"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintVertical_weight="1"
-            app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="@id/startTextGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endTextGuideline"
             app:layout_constraintTop_toBottomOf="@id/nameDetail"
             app:layout_constraintBottom_toTopOf="@id/emailDetail"
-            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMaxTextSize="18sp"
             app:autoSizeMinTextSize="10sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform"
-            android:lines="1"/>
+            android:lines="1" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/emailDetail"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintVertical_weight="1"
-            app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="@id/startTextGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endTextGuideline"
             app:layout_constraintTop_toBottomOf="@id/genderDetail"
             app:layout_constraintBottom_toTopOf="@id/phoneDetail"
-            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMaxTextSize="18sp"
             app:autoSizeMinTextSize="10sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform"
-            android:lines="1"/>
+            android:lines="1" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/phoneDetail"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintVertical_weight="1"
-            app:layout_constraintStart_toStartOf="@id/startGuideline"
-            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="@id/startTextGuideline"
+            app:layout_constraintEnd_toEndOf="@id/endTextGuideline"
             app:layout_constraintTop_toBottomOf="@id/emailDetail"
             app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
-            app:autoSizeMaxTextSize="22sp"
+            app:autoSizeMaxTextSize="18sp"
             app:autoSizeMinTextSize="10sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform"
-            android:lines="1"/>
+            android:lines="1" />
 
 
         <androidx.constraintlayout.widget.Guideline
@@ -103,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.50" />
+            app:layout_constraintGuide_percent="0.56" />
 
 
 
